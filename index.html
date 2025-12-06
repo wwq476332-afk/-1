@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>果蔬盲盒选购</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>果蔬盲盒选购</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-selection">
+            <h2>请选择您的果蔬盲盒</h2>
+            <div class="product-options">
+                <div class="product-box" id="box1">
+                    <img src="box1.jpg" alt="果蔬盲盒1">
+                    <p>果蔬盲盒A</p>
+                    <p>价格：¥99</p>
+                    <button onclick="addToCart('果蔬盲盒A', 99)">加入购物车</button>
+                </div>
+                <div class="product-box" id="box2">
+                    <img src="box2.jpg" alt="果蔬盲盒2">
+                    <p>果蔬盲盒B</p>
+                    <p>价格：¥119</p>
+                    <button onclick="addToCart('果蔬盲盒B', 119)">加入购物车</button>
+                </div>
+                <div class="product-box" id="box3">
+                    <img src="box3.jpg" alt="果蔬盲盒3">
+                    <p>果蔬盲盒C</p>
+                    <p>价格：¥139</p>
+                    <button onclick="addToCart('果蔬盲盒C', 139)">加入购物车</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>购物车</h2>
+            <div id="cart-details">
+                <p>暂无商品</p>
+            </div>
+            <button id="checkout" disabled>结算</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 果蔬盲盒公司 - 保留所有权利</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
